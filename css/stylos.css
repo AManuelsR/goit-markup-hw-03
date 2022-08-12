@@ -1,33 +1,41 @@
-body{
-    position: relative;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 1600px;
-    
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.contenedor{
-    width: 1200px;   
+body{
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 1600px;
+        text-align: center;
+              
+    }
+
+/*----configuracion de encabezado------*/
+
+.contenedor-encabezado{
     margin: 0 auto;
-    
 }
+
 
 header{
-    
-    position: relative;
+    width: 1200px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 20px;
 }
 
 .logo{
     width: 145px;
     height: 31px;
+    color: #2196F3;
     font-size: 26px;
     font-family: 'Raleway';
     font-weight: bold;
-    color: #2196F3;
+    
 }
 
 a{
@@ -39,145 +47,299 @@ a{
     color: black
  }
 
- .banner{
-    position: relative;    
-    background: #2F303A;
+ a:hover{
+    
+    border-bottom: 2px solid #2196F3;
+    color: #2196F3;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1:hover, 
+h2:hover,
+h3:hover,
+h4:hover,
+p:hover{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #2196F3;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*----configuracion banner----*/
+
+ .contenedor-banner{
     width: 1600px;
     height: 600px;
-    left: -160px;
-    text-align: center;
+    background: #2F303A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .text-banner{
     color: white;
-    font-size: 40px;
-    Width: 696px;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 690px;
-    height: 30%;
-    vertical-align: center;
+    font-size: 44px;
+    width: 650px;
+    text-align: center;    
 }
 
-.boton-banner{    
+.boton-servicio{
+    padding-top: 12px;
     background: #2196F3;
     color: #FFFFFF;
     border-radius: 4px;
-    font-weight: bold;
-    font-size: 16px;   
-}
-
-.container{
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-}
-
-h3{
+    width: 210px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.06em;
     text-align: center;
+    cursor: pointer;
+}
+
+.btn-servicio{
+    cursor: pointer;
+}
+
+
+
+
+/*----configuracion valores----*/
+
+.contenedor-valores{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .values-container{
-    float: left;
+    width: 270px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    overflow: hidden;    
+}
+
+.values-container p{
     text-align: justify;
-    margin: 20px;
-   
+}
+
+
+/*----configuracion servicios----*/
+
+.contenedor-servicios{     
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;  
 }
 
 .servicios{
     display: inline-block;
-    text-align: center;
-    width: 1200px;
-    
-    
+    position: relative;
+    margin: 10px;
 }
 
-.container-equipo{
-    
-    display: inline-block;
+
+.servicios:hover{
+    border: solid 2px #2196F3;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/*----configuracion sequipo----*/
+
+.contenedor-equipo{
+    overflow: hidden;
+    width: 1600px;
+    height: 648px;
+    margin: 0 auto;
     text-align: center;
-    width: 1200px;
     background: #F5F4FA;
-    
 }
 
 .work-team{
-    
+    margin: 5px;
     display: inline-block;
-    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    place-items: center;
+    width: 270px;
+    height: 368px;
+    overflow: hidden;
 }
 
-footer{
-    height: 252px;
-    position: relative;    
-    background: #2F303A;
-    width: 1600px;
-    left: -160px;
-    
+.work-team img{
+    width: 270px;
+    height: 260px;
 }
 
-.final{
-    
+.contenedor-equipo:hover,
+.work-team:hover,
+.nuestra-img:hover{
+    border: solid 2px #2196F3;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*--configuracion del portafolio--*/
+
+.contenedor-portafolio{    
+    border: 0;
+    padding: 0;    
     width: 1200px;
-    margin-left: 160px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    overflow: hidden;
 }
-
-.direccion{
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-p{
-    color: black;
-}
-
-/*Pagina Portafolio*/
 
 .menu{
-    text-align: center;
     
-}
-
-.portafolio-estudio{
-   
-    text-align: center;   
-}
-
-.port-group{
-    box-shadow: 7px 7px 15px #592A08;
-    display: inline-block;
-    margin: 10px;
-    height: 400px;
-    width: 370px;
+    text-align: center;
        
 }
 
 .menu-button{
     text-align: center;
+    width: 150px;
+    height: 38px;
+    padding: 10px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
 }
 
-button:hover{
-    background:red;
-    color: black;
-    border: 0;
+.menu-button:hover{
+    background: #2196F3;
+    color: #FFFFFF;
 }
 
-button:focus{
-    background:rgb(0, 89, 255);
-    color: black;
-    border: 0;
+.portafolio-estudio{
+    padding: 0;
+    
 }
 
-a:hover{
-    background:rgb(0, 255, 128);
-    color: black;
+figure{
     border: 0;
-    border-radius: 10px;
+    padding: 0;
+    margin: 0;
 }
+
+.port-group{
+    width: 370px;
+    height: 404px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+    margin: 10px;
+    position: relative;    
+    display: inline-block;    
+}
+
+.port-group:hover{
+    border: solid 2px #2196F3;
+    cursor: pointer;
+}
+
+.port-group .grupo-img{    
+    
+    width: 100%;
+    height: 294px;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grupo-img:hover{    
+    border: solid 2px #2196F3;
+    
+}
+
+/*--configuracion pie de pagina--*/
+
+footer{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    
+    width: 1600px;
+    background: #2F303A;
+    
+}
+
+.contenedor-final{
+    width: 1200px;  
+    margin: 0 auto;
+    box-sizing: border-box;    
+    display: flex; 
+}
+
+.direccion-final{    
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: left;
+    
+    padding: 10px;
+}
+
+.direccion{
+    margin-left: 20px;
+    width: 231px;
+    text-align: justify;
+}
+
+/*---configuracion red social---*/
+
+.red-social-final{
+    width: 220px;
+    margin-left: 10px;
+    text-align: center;  
+}
+
+.icon{
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.red-social-texto{
+    
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.red-social-final .icon .icono-red{
+    color: #fff;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    display: block;    
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.icon:hover span i{
+    color: #fff;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 25px;
+       
+} 
+
+.icon:hover .icono-red{
+    color: #fff;
+    background: #2196F3;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
